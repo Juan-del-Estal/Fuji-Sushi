@@ -1,0 +1,36 @@
+/* Resetear estilos por defecto del navegador para una consistencia mejorada */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../assets/sushiphoto.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  font-size: 16px;
+  font-family: sans-serif;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+
+/* Añadir márgenes y relleno al cuerpo para evitar el contenido pegado al borde */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Añadir estilos básicos a los enlaces */
+a {
+  text-decoration: none;
+  color: #007bff; /* Color del enlace */
+}
+
+/* Establecer un estilo básico para las listas */
+ul, ol {
+  list-style: none;
+}

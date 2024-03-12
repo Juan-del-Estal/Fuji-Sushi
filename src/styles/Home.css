@@ -1,0 +1,69 @@
+.container {
+  height: 60px;
+  width: 800px;
+  line-height: 60px;
+  background-image: url('../assets/buddha-tooth-relic-temple-2025434.jpg');
+  background-size: cover;
+  border-radius: 60px;
+  box-shadow: 0px 5px 10px rgba(153, 136, 136, 0.25);
+}
+
+
+.nav {
+  position: relative;
+  display: flex;
+}
+
+.lable {
+  z-index: 1;
+  flex: 1;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.ref {
+  position: relative;
+  z-index: -1;
+  color: #1e0202;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.container .nav #home:checked ~ .lable.home a,
+.container .nav #contact:checked ~ .lable.contact a,
+.container .nav #about:checked ~ .lable.about a,
+.container .nav #photos:checked ~ .lable.photos a {
+  color: black;
+}
+
+.tab {
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, orange, red);
+  border-radius: 60px;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.5);
+}
+
+.input {
+  display: none;
+}
+
+.nav #about:checked ~ .tab {
+  left: 25%;
+}
+.nav #photos:checked ~ .tab {
+  left: 50%;
+}
+.nav #contact:checked ~ .tab {
+  left: 75%;
+}

@@ -1,0 +1,44 @@
+.welcome-section {
+  text-align: center;
+  padding: 40px;
+  border: solid 0.25px yellowgreen;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 19px;
+  font-weight: 20px;
+  background-image: url('../assets/chef-5993951_1280.jpg');
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  opacity: 0; /* Opacidad inicial 0 */
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-section.show {
+  opacity: 1; /* Opacidad final 1 */
+  transform: translateY(0);
+}
+
+.welcome-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.welcome-content h2 {
+  color: #ff4141;
+}
+
+.welcome-content p {
+  color: #ffffff; 
+  line-height: 1.5;
+}
+
+.welcome-content button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
