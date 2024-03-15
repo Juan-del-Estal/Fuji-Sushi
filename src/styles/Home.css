@@ -36,10 +36,10 @@
   transition: color 0.4s ease;
 }
 
-.container .nav #home:checked ~ .lable.home a,
-.container .nav #contact:checked ~ .lable.contact a,
-.container .nav #about:checked ~ .lable.about a,
-.container .nav #photos:checked ~ .lable.photos a {
+.container .nav #home:checked ~ .lable.home,
+.container .nav #menu:checked ~ .lable.menu,
+.container .nav #branches:checked ~ .lable.branches,
+.container .nav #contact:checked ~ .lable.contact{
   color: black;
 }
 
@@ -58,10 +58,10 @@
   display: none;
 }
 
-.nav #about:checked ~ .tab {
+.nav #menu:checked ~ .tab {
   left: 25%;
 }
-.nav #photos:checked ~ .tab {
+.nav #branches:checked ~ .tab {
   left: 50%;
 }
 .nav #contact:checked ~ .tab {
