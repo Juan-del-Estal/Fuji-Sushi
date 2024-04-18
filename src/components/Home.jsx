@@ -4,7 +4,7 @@ import { Welcome } from './Welcome.jsx';
 import { Menu } from './Menu.jsx';
 import { Contact } from './Contact.jsx';
 import { Branches } from './Branches.jsx';
-import '../styles/Home.css';
+import '../styles/home.css';
 
 export const Home = () => {
   const [activeTab, setActiveTab] = useState('home');

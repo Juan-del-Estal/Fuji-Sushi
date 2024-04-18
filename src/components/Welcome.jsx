@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Welcome.css';
+import '../styles/welcome.css';
 
 export const Welcome = () => {
   const [showWelcome, setShowWelcome] = useState(false);

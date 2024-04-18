@@ -1,0 +1,126 @@
+.menu-section {
+  position: relative;
+  text-align: center;
+  padding: 40px;
+  height: 400px;
+  width: 700px;
+  margin: 0 auto;
+  border: solid 2px black; /*rgb(250, 128, 114);*/
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 19px;
+  font-weight: 20px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 1s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sashimi-video, .nigiri-video, .rolls-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-content {
+  position: relative; /* Ensure content is stacked above the video */
+  z-index: 1; /* Ensure content is above the video */
+}
+
+.menu-section.show {
+  opacity: 1; /* Opacidad final 1 */
+  transform: translateY(0);
+}
+
+#wasabi {
+  color:rgb(29, 226, 29)
+}
+
+.menu-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.menu-content h2 {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  color: #ff2c2c;/*rgb(255, 101, 59);*/
+  font-family:'Noto Sans', sans-serif;
+}
+
+.menu-content .sashimi-p {
+  color:rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-content .nigiri-p {
+  color:rgb(255, 243, 243);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-content .rolls-p {
+  color:rgb(255, 241, 241);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.menu-content .salad-p {
+  color:rgb(229, 18, 18);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.5;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-content button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Slide Arrows */
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999; /* Ensure arrows are above other elements */
+  transform: translateY(-50%);
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  transform: translateY(-50%);
+}
+
+.arrow-left {
+  border-width: 20px 30px 20px 0; /* Changed from 15px 0 15px 25px */
+  border-color: transparent rgb(223, 11, 11);
+  cursor: pointer;
+}
+
+.arrow-right {
+  border-width: 20px 0 20px 30px; /* Changed from 15px 25px 15px 0 */
+  border-color: transparent rgb(223, 11, 11);
+  cursor: pointer;
+}
+

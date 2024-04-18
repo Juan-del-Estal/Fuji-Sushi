@@ -3,9 +3,11 @@
   padding: 40px;
   height: 350px;
   border: solid 0.89px yellowgreen;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 19px;
-  font-weight: 20px;
+  color:rgb(255, 243, 243);
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.5;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url('../assets/chef-5993951_1280.jpg');
   background-color: #f0f0f0;
   border-radius: 20px;
@@ -28,6 +30,7 @@
 }
 
 .welcome-content h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ff4141;
 }
 
