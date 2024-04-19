@@ -1,7 +1,9 @@
 .welcome-section {
   text-align: center;
   padding: 40px;
-  height: 350px;
+  width:700px;
+  height: 400px;
+  margin:0 auto;
   border: solid 0.89px yellowgreen;
   color:rgb(255, 243, 243);
   font-weight: 500;

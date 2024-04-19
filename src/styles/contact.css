@@ -1,0 +1,83 @@
+.contact-section {
+  text-align: center;
+  padding: 40px;
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+  border: solid 0.89px yellowgreen;
+  color:rgb(255, 243, 243);
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.5;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('../assets/contact-photo.jpg');
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  opacity: 0; /* Opacidad inicial 0 */
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section.show{
+  opacity: 1; /* Opacidad final 1 */
+  transform: translateY(0);
+}
+
+.title {
+  opacity: 0; /* Opacidad inicial 0 */
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 1s ease-in-out;
+}
+
+.title.show {
+  opacity: 1; /* Opacidad final 1 */
+  transform: translateY(0);
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ff4141;
+}
+
+.contact-content p {
+  color: #ffffff; 
+  line-height: 1.5;
+}
+
+.contact-content button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.label-form {
+  color:rgb(247, 98, 122);
+}
+
+.input-contact {
+  background-color: #242424;
+  color:darkgray;
+}
+
+textarea {
+  background-color: #333;
+}
+
+.input-contact:focus {
+  background-color: #242424;
+  color:darkgray; /* Ensure the background color remains the same when focused */
+}
+
+
+
+
