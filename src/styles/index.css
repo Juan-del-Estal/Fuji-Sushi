@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url('../assets/sushiphoto.jpg');
+  background-image: url('../assets/main-background.jpeg');
   background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
   font-size: 16px;
   font-family: sans-serif;
